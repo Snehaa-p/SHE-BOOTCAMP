@@ -5,30 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Development Bootcamp</title>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="style.css">
 </head>
 <body>
     <header>
-        <div>
-            <h3>SHE GCEK</h3>
+        <div class="container">
+            <div id="caption">
+            <h1><span class="highlight">SHE</span> GCEK</h1>
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li class="current"><a href="index.html">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+    </div>
     </header>
-    <section id="Hero">
-        <div>
+    <section id="heading">
+        <div class="container">
             <h1>Web Development
                 <br>Bootcamp</h1>
         </div>
     </section>
 
-    <section id="images">
-        <div>
+    <section id="search">
+    </section>
+
+    <section id="boxes">
+        <div class="container">
+        <div class="box">
             <img src="images/html.jpeg"
             alt="HTML Image">
         <h3>HTML</h3>
@@ -37,45 +45,52 @@
         assumenda cum vel asperiores maiores vitae possimus, doloribus autem 
         sit voluptates rem fugiat!</p>
         </div>
-        <div> <img src="images/css.jpeg"
+        <div class="box">
+            <img src="images/css.jpeg"
             alt="CSS Image">
         <h3>CSS</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Incidunt
          suspit recusandae alias quisquam praesentium aut dolor distinctio
         assumenda cum vel asperiores maiores vitae possimus, doloribus autem 
         sit voluptates rem fugiat!</p></div>
-        <div> <img src="images/JS.jpeg"
-            alt="JS Image"height="200" width="200">
+        <div class="box"> 
+            <img src="images/JS.jpeg"
+            alt="JS Image">
         <h3>JS</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Incidunt
          suspit recusandae alias quisquam prasentium aut dolor distinctio
         assumenda cum vel asperiores maiores vitae possimus, doloribus autem 
-        sit voluptates rem fugiat!</p></div>
+        sit voluptates rem fugiat!</p>
+    </div>
+    </div>
     </section>
+    <div class="clr"></div>
 
     <section id="Slogan">
-        <div>
-            <h2>Hurry up! and experience the journey with us</h2>
+        <div class="container">
+            <div class="slogan">
+            <h2>Hurry up! and experience the journey with us!</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Incidunt
                 suspit recusandae alias quisquam prasentium aut dolor distinctio
                assumenda cum vel asperiores maiores vitae possimus, doloribus autem 
                sit voluptates rem fugiat!</p>
+               <h4>Register Here</h4>
+        </div>
         </div>
     </section>
 
-    <section id="forms">
-        <h4>Register Here</h4>
-        <div>
-            <form>
-                <div>
+    <section id="my-form">
+        <div class="container">
+            <form styles="text align: center; justify-content: center;">
+        <div class="form-group">
                     <label>Name</label>
-                    <input type ="text">
+                    <input type ="text" name="name">
                 </div>
-                <div>
+                <div class="form-group">
                     <label>Email</label>
-                    <input type="email">
+                    <input type="text" name="email">
                 </div>
-                <div>
+                <div class="form-group">
                     <label>Batch</label>
                     <select>
                         <option>2k20</option>
@@ -86,21 +101,34 @@
                 </div>
                 <div>
                     <input type="Submit">
+                </form>
                 </div>
-            </form>
     </section>
 
-    <section id="Video">
-        <h2>Learn, Explore and Create</h2>
-        <iframe width="640" height="360" src="https://www.youtube.com/embed/HEMjF3LEtCo" 
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <section id ="slogan-2">
+        <div class="container">
+            <div class="slogan">
+                <h2>Learn, Explore and Create</h2>
+            </div>
+        </div>
     </section>
+
+    <section id="videos">
+        <div class="container">
+            <div class="slogan">
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/HEMjF3LEtCo" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>      
+    </section>
+
     <footer>
         <p>For further information Email at 
             <a href="#">abc@xyz.com</a>,
             Copyright &copy; 2020
         </p>
+        <p>This is a fake website</p>
     </footer>
 
 </body>
