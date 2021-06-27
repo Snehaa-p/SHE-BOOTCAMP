@@ -7,6 +7,7 @@
     <title>Web Development Bootcamp</title>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet"href="style.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
     <header>
@@ -74,6 +75,11 @@
                 suspit recusandae alias quisquam prasentium aut dolor distinctio
                assumenda cum vel asperiores maiores vitae possimus, doloribus autem 
                sit voluptates rem fugiat!</p>
+               <button onclick="changecontent()">Know more</button>
+               <p id="know-more">Lorem ipsum dolor sit amet consectetur adipisicing elit.Incidunt
+                suspit recusandae alias quisquam prasentium aut dolor distinctio
+               assumenda cum vel asperiores maiores vitae possimus, doloribus autem 
+               sit voluptates rem fugiat!</p>
                <h4>Register Here</h4>
         </div>
         </div>
@@ -81,23 +87,26 @@
 
     <section id="my-form">
         <div class="container">
-            <form styles="text align: center; justify-content: center;">
+            <form style="text-align: center; justify-content: center;" onsubmit="return validation()">
         <div class="form-group">
                     <label>Name</label>
-                    <input type ="text" name="name">
+                    <input id="name-input" type ="text" name="name">
+                    <p id="name-validation">Enter name</p>
                 </div>
                 <div class="form-group">
                     <label>Email</label>
-                    <input type="text" name="email">
+                    <input id="email-input" type="text" name="email">
+                    <p id="email-validation">Email cannot be empty!</p>
                 </div>
                 <div class="form-group">
                     <label>Batch</label>
-                    <select>
+                    <select id="batch-input">
                         <option>2k20</option>
                         <option>2k19</option>
                         <option>2k18</option>
                         <option>2k17</option>
                     </select>
+                    <p id="batch-validation">Enter batch</p>
                 </div>
                 <div>
                     <input type="Submit">
